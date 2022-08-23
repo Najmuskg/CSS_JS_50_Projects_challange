@@ -1,0 +1,18 @@
+#slider_area{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider_caption h1{
+    color:red;
+    font-size: 35px;
+}

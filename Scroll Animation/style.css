@@ -1,0 +1,54 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efedd6;
+  font-family: 'MADE Canvas';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1{
+margin: 20px;
+}
+.box{
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform:translateX(300%);
+    transition: transform 0.9s ease-in-out;
+}
+.box img:hover  {
+  transform: scale(1.04);
+ transition: all 0.5s ease-in-out
+}
+.box img{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 4px 8px 13px #1b1b1b;
+}
+
+.box:nth-of-type(even){
+    transform:translateX(-300%);
+}
+.box.active{
+    transform:translateX(0);
+}
+
+.box h2{
+    font-size: 45px
+}
